@@ -1,10 +1,16 @@
 # cookies
 
-This repo contains a python script to get the cookies set by some http-GET request.
+[![UNLICENSE licensed][license-badge]][license-url]
 
-# Set Up Environment
+[license-badge]: https://img.shields.io/badge/license-UNLICENSE-blue.svg
+[license-url]: ./UNLICENSE
 
-To set up an environment run the following commands in the context of the repo top-level:
+[cookies.py](cookies.py) is a Python script to get the cookies set by some http-GET request.
+
+### Installation
+
+To install cookies, first clone the repo.
+Then set up an environment by running the following commands in the context of the repo top-level:
 
 ```console
 user@host:~$ python -m venv venv
@@ -14,14 +20,14 @@ user@host:~$ python -m pip install -r requirements.txt
 user@host:~$ deactivate
 ```
 
-# Get Cookies
+### Usage
 
-To get the cookies from `http://...` run the following commands in a properly set up environment:
+To get the cookies from `http://...` run the following command in a properly set up and activated environment:
 
 ```console
-user@host:~$ source venv/bin/activate.fish
-user@host:~$ python -m pip install --upgrade pip
-user@host:~$ python -m pip install --upgrade -r requirements.txt
 user@host:~$ python cookies.py http://...
-user@host:~$ deactivate
 ```
+
+### Upgrade
+
+To upgrade the installation of cookies, just remove `./venv`; then pull and reinstall.
